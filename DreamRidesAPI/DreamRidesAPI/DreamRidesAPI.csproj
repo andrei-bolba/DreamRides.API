@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
@@ -17,12 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DreamRides.Communication\DreamRides.Communication.csproj" />
     <ProjectReference Include="..\DreamRides.Database\DreamRides.Database.csproj" />
+    <ProjectReference Include="..\DreamRides.Data\DreamRides.Data.csproj" />
+    <ProjectReference Include="..\DreamRides.Service\DreamRides.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,9 @@
+using System.Reflection;
 using DreamRides.Database.Context;
 using DreamRidesAPI.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-internal class Program
+public class Program
 {
     private static void Main(string[] args)
     {
@@ -11,11 +12,16 @@ internal class Program
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-
+        
+        Assembly[] allCoreProjectsAssembly =
+        [
+            typeof(DreamRides.Service.DependencyInjection).Assembly
+        ];
+        
+        builder.Services.AddApplicationServices(builder.Configuration, allCoreProjectsAssembly);
+        builder.Services.AddIdentityServices(builder.Configuration);
         builder.Services.AddDbContext<DealershipContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DealershipDatabase")));
-        builder.Services.AddApplicationServices(builder.Configuration);
-        builder.Services.AddIdentityServices(builder.Configuration);
 
 
         var app = builder.Build();

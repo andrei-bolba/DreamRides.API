@@ -13,3 +13,6 @@ C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Data\obj\Debug\net8.0\refi
 C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Data\obj\Debug\net8.0\DreamRides.Data.pdb
 C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Data\obj\Debug\net8.0\DreamRides.Data.genruntimeconfig.cache
 C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Data\obj\Debug\net8.0\ref\DreamRides.Data.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Data\bin\Debug\net8.0\DreamRides.Database.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Data\bin\Debug\net8.0\DreamRides.Database.pdb
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Data\obj\Debug\net8.0\DreamRid.8274BB62.Up2Date

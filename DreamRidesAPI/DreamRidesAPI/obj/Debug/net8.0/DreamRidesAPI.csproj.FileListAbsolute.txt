@@ -143,3 +143,14 @@ C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\obj\Debug\net8.0\refint
 C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\obj\Debug\net8.0\DreamRidesAPI.pdb
 C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\obj\Debug\net8.0\DreamRidesAPI.genruntimeconfig.cache
 C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\obj\Debug\net8.0\ref\DreamRidesAPI.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\Ardalis.Result.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\MediatR.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\DreamRides.Communication.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\DreamRides.Data.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\DreamRides.Service.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\DreamRides.Communication.pdb
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\DreamRides.Data.pdb
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\DreamRides.Service.pdb
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRidesAPI\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
