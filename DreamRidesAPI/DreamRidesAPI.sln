@@ -5,6 +5,12 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamRidesAPI", "DreamRidesAPI\DreamRidesAPI.csproj", "{7B4E819D-3BD2-495B-A56D-F1A9843DC4F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamRides.Data", "DreamRides.Data\DreamRides.Data.csproj", "{5FF3076A-2326-46E6-94B7-1A49BDB34AA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamRides.Database", "DreamRides.Database\DreamRides.Database.csproj", "{089ED072-44FB-4128-8B5C-98D931BB4760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamRides.Communication", "DreamRides.Communication\DreamRides.Communication.csproj", "{EC2A6E24-2D9C-4639-A970-090D91C67E7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{7B4E819D-3BD2-495B-A56D-F1A9843DC4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B4E819D-3BD2-495B-A56D-F1A9843DC4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B4E819D-3BD2-495B-A56D-F1A9843DC4F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FF3076A-2326-46E6-94B7-1A49BDB34AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FF3076A-2326-46E6-94B7-1A49BDB34AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FF3076A-2326-46E6-94B7-1A49BDB34AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FF3076A-2326-46E6-94B7-1A49BDB34AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089ED072-44FB-4128-8B5C-98D931BB4760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089ED072-44FB-4128-8B5C-98D931BB4760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089ED072-44FB-4128-8B5C-98D931BB4760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089ED072-44FB-4128-8B5C-98D931BB4760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC2A6E24-2D9C-4639-A970-090D91C67E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2A6E24-2D9C-4639-A970-090D91C67E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2A6E24-2D9C-4639-A970-090D91C67E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2A6E24-2D9C-4639-A970-090D91C67E7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

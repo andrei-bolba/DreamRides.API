@@ -1,0 +1,15 @@
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\bin\Debug\net8.0\DreamRides.Comunication.deps.json
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\bin\Debug\net8.0\DreamRides.Comunication.runtimeconfig.json
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\bin\Debug\net8.0\DreamRides.Comunication.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\bin\Debug\net8.0\DreamRides.Comunication.pdb
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.csproj.AssemblyReference.cache
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.AssemblyInfoInputs.cache
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.AssemblyInfo.cs
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.csproj.CoreCompileInputs.cache
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.sourcelink.json
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\refint\DreamRides.Comunication.dll
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.pdb
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\DreamRides.Comunication.genruntimeconfig.cache
+C:\Repos\Personal\DreamRides\DreamRidesAPI\DreamRides.Comunication\obj\Debug\net8.0\ref\DreamRides.Comunication.dll

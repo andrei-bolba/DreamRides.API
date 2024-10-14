@@ -1,3 +1,6 @@
+using DreamRides.Database.Context;
+using Microsoft.EntityFrameworkCore;
+
 internal class Program
 {
     private static void Main(string[] args)
@@ -10,6 +13,10 @@ internal class Program
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        builder.Services.AddDbContext<DealershipContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DealershipDatabase")));
+
 
         var app = builder.Build();
 
