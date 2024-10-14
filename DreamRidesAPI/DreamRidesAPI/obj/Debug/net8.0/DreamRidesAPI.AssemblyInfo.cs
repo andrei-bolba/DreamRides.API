@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DreamRidesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68c295432d85a753277748f1eb98104e62874f71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5014309d5945f790df952c7e2ac5402fabd6673")]
 [assembly: System.Reflection.AssemblyProductAttribute("DreamRidesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DreamRidesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
