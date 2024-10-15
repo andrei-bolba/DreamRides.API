@@ -8,19 +8,17 @@ namespace DreamRides.Data.DTO
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public string PasswordHash { get; set; }
         public DateTime CreatedAt { get; set; }
         public List<Car> FavoriteCars { get; set; }
 
         public UserDTO(User user)
         {
-            this.Id = user.Id;
-            this.FirstName = user.FirstName;
-            this.LastName = user.LastName;
-            this.Email = user.Email;
-            this.PasswordHash = user.PasswordHash;
-            this.CreatedAt = user.CreatedAt;
-            this.FavoriteCars = user.Favorites.Where(f=>f.UserId == this.Id).Select(t=>t.Car).ToList();
+            Id = user.Id;
+            FirstName = user.FirstName;
+            LastName = user.LastName;
+            Email = user.Email;
+            CreatedAt = user.CreatedAt;
+            FavoriteCars = user.Favorites.Where(f=>f.UserId == this.Id).Select(t=>t.Car).ToList();
         }
     }
 }

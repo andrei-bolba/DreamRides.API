@@ -21,6 +21,10 @@ namespace DreamRides.Database.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+            
             modelBuilder.Entity<Favorite>()
                 .HasKey(f => new { f.UserId, f.CarId });
 
