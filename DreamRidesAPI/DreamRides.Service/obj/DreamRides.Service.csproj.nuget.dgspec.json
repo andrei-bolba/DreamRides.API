@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj": {}
+    "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj": {
+    "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj",
+        "projectUniqueName": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj",
         "projectName": "DreamRides.Communication",
-        "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj",
-        "packagesPath": "C:\\Users\\AndreiBolba\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Communication\\obj\\",
+        "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj",
+        "packagesPath": "C:\\Users\\Bolba Andrei\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Communication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AndreiBolba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bolba Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
-                "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj"
+              "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
+                "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj"
               }
             }
           }
@@ -77,21 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
+    "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj",
+        "projectUniqueName": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj",
         "projectName": "DreamRides.Database",
-        "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj",
-        "packagesPath": "C:\\Users\\AndreiBolba\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\obj\\",
+        "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj",
+        "packagesPath": "C:\\Users\\Bolba Andrei\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AndreiBolba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bolba Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +98,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -154,21 +152,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj": {
+    "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj",
+        "projectUniqueName": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj",
         "projectName": "DreamRides.Data",
-        "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj",
-        "packagesPath": "C:\\Users\\AndreiBolba\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Data\\obj\\",
+        "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj",
+        "packagesPath": "C:\\Users\\Bolba Andrei\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AndreiBolba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bolba Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,15 +174,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
-                "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj"
+              "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
+                "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj"
               }
             }
           }
@@ -231,21 +228,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj": {
+    "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj",
+        "projectUniqueName": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj",
         "projectName": "DreamRides.Service",
-        "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj",
-        "packagesPath": "C:\\Users\\AndreiBolba\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Service\\obj\\",
+        "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Service\\DreamRides.Service.csproj",
+        "packagesPath": "C:\\Users\\Bolba Andrei\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AndreiBolba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bolba Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -253,21 +250,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj": {
-                "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj"
+              "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj": {
+                "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Communication\\DreamRides.Communication.csproj"
               },
-              "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
-                "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj"
+              "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj": {
+                "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Database\\DreamRides.Database.csproj"
               },
-              "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj": {
-                "projectPath": "C:\\Repos\\Personal\\DreamRides\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj"
+              "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj": {
+                "projectPath": "D:\\Programming\\.NET\\DreamRides.API\\DreamRidesAPI\\DreamRides.Data\\DreamRides.Data.csproj"
               }
             }
           }
@@ -312,7 +308,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
