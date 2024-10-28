@@ -31,11 +31,11 @@ namespace DreamRides.Data.DTO
             Year = car.Year;
             Price = car.Price;
             Color = car.Color;
-            this.Transmission = car.Transmission;
+            Transmission = car.Transmission;
             Mileage = car.Mileage;
-            this.FuelType = FuelType;
+            FuelType = FuelType;
             Description = car.Description;
-            this.Chassis = car.Chassis;
+            Chassis = car.Chassis;
             Favorite = car.Favorites.Where(f=>f.CarId == car.Id).Select(f=>f.User).ToList();
         }
     }
