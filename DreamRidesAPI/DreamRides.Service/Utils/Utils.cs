@@ -65,9 +65,9 @@ public static class Utils
         
         if (errors.Any())
         {
-            return new KeyValuePair<bool, string>(true, string.Join(Environment.NewLine, errors));
+            return new KeyValuePair<bool, string>(false, string.Join(Environment.NewLine, errors));
         }
         
-        return new KeyValuePair<bool, string>(false, string.Empty);
+        return new KeyValuePair<bool, string>(true, string.Empty);
     }
 }
