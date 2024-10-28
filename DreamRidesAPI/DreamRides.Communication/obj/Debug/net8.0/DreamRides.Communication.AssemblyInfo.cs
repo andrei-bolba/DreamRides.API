@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DreamRides.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9b4a9916b2e923b1cb9fafa7c106ffe7614cc43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb7dff116c68213448a2ff741fa3dd5cdce1fb35")]
 [assembly: System.Reflection.AssemblyProductAttribute("DreamRides.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DreamRides.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
