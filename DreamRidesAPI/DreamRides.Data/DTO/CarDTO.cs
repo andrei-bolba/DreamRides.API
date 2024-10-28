@@ -33,7 +33,7 @@ namespace DreamRides.Data.DTO
             Color = car.Color;
             Transmission = car.Transmission;
             Mileage = car.Mileage;
-            FuelType = FuelType;
+            FuelType = car.FuelType;
             Description = car.Description;
             Chassis = car.Chassis;
             Favorite = car.Favorites.Where(f=>f.CarId == car.Id).Select(f=>f.User).ToList();
