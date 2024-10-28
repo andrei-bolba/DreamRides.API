@@ -32,7 +32,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [AllowAnonymous]
     [HttpPost("/add")]
     [ProducesResponseType(200)]
-    [ProducesResponseType(404)]
+    [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> AddUser([FromBody] UserRequest userRequest)
     {
         return await sender.Send(new AddUserCommand{UserRequest = userRequest});
@@ -40,8 +40,10 @@ public sealed class UserController(ISender sender): ApiControllerBase
     
     [AllowAnonymous]
     [HttpPost("/login")]
+    [HttpPost("/login")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
+    [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> LogInUser([FromBody] LogInDTO user)
     {
         return await sender.Send(new LogInQuery(){Email = user.Email, Password = user.Password});
@@ -51,6 +53,8 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [HttpDelete("/delete/{userId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
+    [ProducesResponseType(404)]
+    [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> DeleteUser(Guid userId)
     {
         return await sender.Send(new DeleteCommand(){Id = userId});
@@ -60,6 +64,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [HttpPut("/update/{userId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
+    [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> UpdateUser(Guid userId, [FromBody]UserRequest user)
     {
         return await sender.Send(new UpdateCommand(){UserId = userId, UserRequest = user});
