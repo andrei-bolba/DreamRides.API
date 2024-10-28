@@ -46,7 +46,7 @@ public class UserRepository(DealershipContext dealershipContext) : IUserReposito
             return new ResponseType<User>
             {
                 Object = null,
-                Collection = users,
+                Collection = users.ToList(),
                 Message = "Users was sent successfully",
                 IsSuccess = true
             };
@@ -140,5 +140,35 @@ public class UserRepository(DealershipContext dealershipContext) : IUserReposito
                 IsSuccess = true
             };
         }
+    }
+
+    public ResponseType<User> GetUserByEmail(string email)
+    {
+        var getAllUsers = GetAll();
+        if (getAllUsers is { IsSuccess: true, Collection: not null })
+        {
+            var user = getAllUsers.Collection.FirstOrDefault(u => u.Email == email);
+            if (user == null)
+            {
+                return new ResponseType<User>()
+                {
+                    Message = "Email is wrong!",
+                    IsSuccess = false
+                };
+            }
+
+            return new ResponseType<User>()
+            {
+                Object = user,
+                Message = "User find successfully!",
+                IsSuccess = true
+            };
+        }
+
+        return new ResponseType<User>()
+        {
+            Message = getAllUsers.Message,
+            IsSuccess = false
+        };
     }
 }

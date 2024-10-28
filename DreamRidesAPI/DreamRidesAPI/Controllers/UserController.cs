@@ -28,4 +28,13 @@ public sealed class UserController(ISender sender): ApiControllerBase
     {
         return await sender.Send(new AddUserCommand{UserRequest = userRequest});
     }
+    
+    [AllowAnonymous]
+    [HttpPost("/login")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(404)]
+    public async Task<ResponseType<UserDTO>> LogIn([FromBody] string email, string password)
+    {
+        return await sender.Send(new LogInQuery(){Email = email, Password = password});
+    }
 }
