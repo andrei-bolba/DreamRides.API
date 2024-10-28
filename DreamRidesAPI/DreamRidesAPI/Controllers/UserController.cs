@@ -15,16 +15,25 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [HttpGet("/all")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
-    public async Task<ResponseType<UserDTO>> GetAllPersons()
+    public async Task<ResponseType<UserDTO>> GetAllUser()
     {
         return await sender.Send(new GetAllUsersQuery());
+    }
+    
+    [AllowAnonymous]
+    [HttpGet("/{userId:guid}")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(404)]
+    public async Task<ResponseType<UserDTO>> GetOneUser(Guid userId)
+    {
+        return await sender.Send(new GetOneUserQuery{UserId = userId});
     }
     
     [AllowAnonymous]
     [HttpPost("/add")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
-    public async Task<ResponseType<UserDTO>> AddPerson([FromBody] UserRequest userRequest)
+    public async Task<ResponseType<UserDTO>> AddUser([FromBody] UserRequest userRequest)
     {
         return await sender.Send(new AddUserCommand{UserRequest = userRequest});
     }
@@ -33,8 +42,26 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [HttpPost("/login")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
-    public async Task<ResponseType<UserDTO>> LogIn([FromBody] LogInDTO user)
+    public async Task<ResponseType<UserDTO>> LogInUser([FromBody] LogInDTO user)
     {
         return await sender.Send(new LogInQuery(){Email = user.Email, Password = user.Password});
+    }
+    
+    [AllowAnonymous]
+    [HttpDelete("/delete/{userId:guid}")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(404)]
+    public async Task<ResponseType<UserDTO>> DeleteUser(Guid userId)
+    {
+        return await sender.Send(new DeleteCommand(){Id = userId});
+    }
+    
+    [AllowAnonymous]
+    [HttpPut("/update/{userId:guid}")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(404)]
+    public async Task<ResponseType<UserDTO>> UpdateUser(Guid userId, [FromBody]UserRequest user)
+    {
+        return await sender.Send(new UpdateCommand(){UserId = userId, UserRequest = user});
     }
 }
