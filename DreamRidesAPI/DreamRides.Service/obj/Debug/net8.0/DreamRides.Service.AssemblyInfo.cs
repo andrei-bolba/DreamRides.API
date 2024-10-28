@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DreamRides.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb7dff116c68213448a2ff741fa3dd5cdce1fb35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08b877930c88942b0499e8331e7a697fe9980c29")]
 [assembly: System.Reflection.AssemblyProductAttribute("DreamRides.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DreamRides.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
