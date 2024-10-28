@@ -35,6 +35,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [ProducesResponseType(404)]
     public async Task<ResponseType<UserDTO>> LogIn([FromBody] string email, string password)
     {
-        return await sender.Send(new LogInQuery(){Email = email, Password = password});
+        return null;
+        // return await sender.Send(new LogInQuery(){Email = email, Password = password});
     }
 }
