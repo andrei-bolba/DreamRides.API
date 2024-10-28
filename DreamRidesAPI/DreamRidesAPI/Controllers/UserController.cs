@@ -40,7 +40,6 @@ public sealed class UserController(ISender sender): ApiControllerBase
     
     [AllowAnonymous]
     [HttpPost("/login")]
-    [HttpPost("/login")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
@@ -52,7 +51,6 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [AllowAnonymous]
     [HttpDelete("/delete/{userId:guid}")]
     [ProducesResponseType(200)]
-    [ProducesResponseType(404)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> DeleteUser(Guid userId)
