@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DreamRidesAPI.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/[controller]/")]
 [Produces("application/json")]
 [ProducesResponseType(500)]
 [Authorize(AuthenticationSchemes = "Bearer")]

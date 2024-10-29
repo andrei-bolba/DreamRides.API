@@ -19,7 +19,7 @@ public sealed class AddUserCommandHandler(IUserRepository userRepository): IRequ
     public async Task<Result<ResponseType<UserDTO>>> Handle(AddUserCommand request, CancellationToken cancellationToken)
     {
         var requiredFields = ValidationHelperUtils.ValidateRequiredFields(request.UserRequest);
-        if (!requiredFields.Key)
+        if (requiredFields.Key)
         {
             return Result<ResponseType<UserDTO>>.Success(new ResponseType<UserDTO>
             {
@@ -28,7 +28,7 @@ public sealed class AddUserCommandHandler(IUserRepository userRepository): IRequ
             });
         }
 
-        var emailValidation = Utils.Utils.EmailValid(request.UserRequest.Email);
+        var emailValidation = Utils.Utils.EmailValid(request.UserRequest.Email!);
         if (!emailValidation.Key)
         {
             return Result<ResponseType<UserDTO>>.Success(new ResponseType<UserDTO>
@@ -38,7 +38,7 @@ public sealed class AddUserCommandHandler(IUserRepository userRepository): IRequ
             });
         }
         
-        var passwordValidation = Utils.Utils.PasswordValidation(request.UserRequest.Password);
+        var passwordValidation = Utils.Utils.PasswordValidation(request.UserRequest.Password!);
         if (!passwordValidation.Key)
         {
             return Result<ResponseType<UserDTO>>.Success(new ResponseType<UserDTO>
@@ -48,15 +48,16 @@ public sealed class AddUserCommandHandler(IUserRepository userRepository): IRequ
             });
         }
         
-        var password = Utils.Utils.HashedPassword(request.UserRequest.Password);
+        var password = Utils.Utils.HashedPassword(request.UserRequest.Password!);
         var newUser = new User
         {
-            FirstName = request.UserRequest.FirstName,
-            LastName = request.UserRequest.LastName,
-            Email = request.UserRequest.Email,
+            FirstName = request.UserRequest.FirstName!,
+            LastName = request.UserRequest.LastName!,
+            Email = request.UserRequest.Email!,
             PasswordHash = password.Key,
             PasswordSalt = password.Value,
-            CreatedAt = DateTime.Now
+            CreatedAt = DateTime.Now,
+            Favorites = new List<Favorite>()
         };
         var res = userRepository.Add(newUser);
 

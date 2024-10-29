@@ -19,7 +19,7 @@ public sealed class AddCarCommandHandler(ICarRepository carRepository) : IReques
     public async Task<Result<ResponseType<CarDTO>>> Handle(AddCarCommand request, CancellationToken cancellationToken)
     {
         var requiredFields = ValidationHelperUtils.ValidateRequiredFields(request.CarRequest);
-        if (!requiredFields.Key)
+        if (requiredFields.Key)
         {
             return Result<ResponseType<CarDTO>>.Success(new ResponseType<CarDTO>
             {
@@ -39,7 +39,8 @@ public sealed class AddCarCommandHandler(ICarRepository carRepository) : IReques
             Mileage = request.CarRequest.Mileage!.Value,
             FuelType = request.CarRequest.FuelType!.Value,
             Description = request.CarRequest.Description!,
-            Chassis = request.CarRequest.Chassis!.Value
+            Chassis = request.CarRequest.Chassis!.Value,
+            Favorites = new List<Favorite>()
         };
 
         var addResult = carRepository.Add(newCar);

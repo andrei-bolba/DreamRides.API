@@ -12,7 +12,7 @@ namespace DreamRidesAPI.Controllers;
 public sealed class CarController(ISender sender): ApiControllerBase
 {
     [AllowAnonymous]
-    [HttpGet("/all")]
+    [HttpGet("all")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     public async Task<ResponseType<CarDTO>> GetAllCar()
@@ -21,7 +21,7 @@ public sealed class CarController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpGet("/{carId:guid}")]
+    [HttpGet("{carId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     public async Task<ResponseType<CarDTO>> GetOneCar(Guid carId)
@@ -30,7 +30,7 @@ public sealed class CarController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpPost("/add")]
+    [HttpPost("add")]
     [ProducesResponseType(200)]
     [ProducesResponseType(500)]
     public async Task<ResponseType<CarDTO>> AddCar([FromBody] CarRequest carRequest)
@@ -39,7 +39,7 @@ public sealed class CarController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpDelete("/delete/{carId:guid}")]
+    [HttpDelete("delete/{carId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
@@ -49,7 +49,7 @@ public sealed class CarController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpPut("/update/{carId:guid}")]
+    [HttpPut("update/{carId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]

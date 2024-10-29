@@ -66,11 +66,13 @@ public sealed class UpdateUserCommandHandler(IUserRepository userRepository) : I
         var password = Utils.Utils.HashedPassword(request.UserRequest.Password ?? "");
         var editedUser = new User
         {
+            Id=user.Object.Id,
             FirstName = !string.IsNullOrWhiteSpace(request.UserRequest.FirstName) ? request.UserRequest.FirstName : user.Object.FirstName,
             LastName = !string.IsNullOrWhiteSpace(request.UserRequest.LastName) ? request.UserRequest.LastName : user.Object.LastName,
             Email = !string.IsNullOrWhiteSpace(request.UserRequest.Email) ? request.UserRequest.Email : user.Object.Email,
             PasswordHash = !string.IsNullOrWhiteSpace(request.UserRequest.Password) ? password.Key : user.Object.PasswordHash,
             PasswordSalt = !string.IsNullOrWhiteSpace(request.UserRequest.Password) ? password.Value : user.Object.PasswordSalt,
+            Favorites = user.Object.Favorites
         };
 
         var updateResult = userRepository.Update(editedUser);

@@ -12,7 +12,7 @@ namespace DreamRidesAPI.Controllers;
 public sealed class UserController(ISender sender): ApiControllerBase
 {
     [AllowAnonymous]
-    [HttpGet("/all")]
+    [HttpGet("all")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     public async Task<ResponseType<UserDTO>> GetAllUser()
@@ -21,7 +21,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpGet("/{userId:guid}")]
+    [HttpGet("{userId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     public async Task<ResponseType<UserDTO>> GetOneUser(Guid userId)
@@ -30,7 +30,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpPost("/add")]
+    [HttpPost("add")]
     [ProducesResponseType(200)]
     [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> AddUser([FromBody] UserRequest userRequest)
@@ -39,7 +39,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpPost("/login")]
+    [HttpPost("login")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
@@ -49,7 +49,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpDelete("/delete/{userId:guid}")]
+    [HttpDelete("delete/{userId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]
@@ -59,7 +59,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     }
     
     [AllowAnonymous]
-    [HttpPut("/update/{userId:guid}")]
+    [HttpPut("update/{userId:guid}")]
     [ProducesResponseType(200)]
     [ProducesResponseType(404)]
     [ProducesResponseType(500)]

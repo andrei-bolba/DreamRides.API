@@ -12,7 +12,8 @@ namespace DreamRides.Data.DTO
         public decimal Price { get; set; }
         public string Color { get; set; }
         public Transmision Transmission { get; set; }
-        public int Mileage { get; set; }
+        public int MileageKilometers { get; set; }
+        public int MilageMiles { get; set; }
         public FuelType FuelType { get; set; }
         public string Description { get; set; }
         public Chassis Chassis { get; set; }
@@ -27,11 +28,12 @@ namespace DreamRides.Data.DTO
             Price = car.Price;
             Color = car.Color;
             Transmission = car.Transmission;
-            Mileage = car.Mileage;
+            MileageKilometers = car.Mileage;
+            MilageMiles = (int)Math.Round(car.Mileage * 0.62137);
             FuelType = car.FuelType;
             Description = car.Description;
             Chassis = car.Chassis;
-            Favorite = car.Favorites.Where(f=>f.CarId == car.Id).Select(f=>f.User).ToList();
+            Favorite = car.Favorites != null ? car.Favorites.Where(f=>f.CarId == car.Id).Select(f=>f.User).ToList(): [];
         }
     }
 }

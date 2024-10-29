@@ -39,6 +39,7 @@ public sealed class UpdateCarCommandCommandHandler(ICarRepository carRepository)
         
         var editedCar = new Car
         {
+            Id = car.Object.Id,
             Brand = !string.IsNullOrWhiteSpace(request.CarRequest.Brand) ? request.CarRequest.Brand : car.Object.Brand,
             Model = !string.IsNullOrWhiteSpace(request.CarRequest.Model) ? request.CarRequest.Model : car.Object.Model,
             Year = request.CarRequest.Year ?? car.Object.Year,
@@ -48,8 +49,10 @@ public sealed class UpdateCarCommandCommandHandler(ICarRepository carRepository)
             Mileage = request.CarRequest.Mileage?? car.Object.Year,
             FuelType = request.CarRequest.FuelType?? car.Object.FuelType,
             Description = !string.IsNullOrWhiteSpace(request.CarRequest.Description) ? request.CarRequest.Description : car.Object.Description,
-            Chassis = request.CarRequest.Chassis?? car.Object.Chassis
+            Chassis = request.CarRequest.Chassis?? car.Object.Chassis,
+            Favorites = car.Object.Favorites
         };
+            
             
         var updateResult = carRepository.Update(editedCar);
         if (updateResult is { IsSuccess: true, Object: not null })
