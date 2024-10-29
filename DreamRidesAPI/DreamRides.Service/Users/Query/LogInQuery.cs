@@ -10,8 +10,8 @@ namespace DreamRides.Service.Users.Query;
 
 public record LogInQuery : IRequest<Result<ResponseType<UserDTO>>>
 {
-    public string Email { get; set; }
-    public string Password { get; set; }
+    public required string Email { get; set; }
+    public required string Password { get; set; }
 }
 
 public sealed class LogInQueryHandler(IUserRepository userRepository) : IRequestHandler<LogInQuery, Result<ResponseType<UserDTO>>>

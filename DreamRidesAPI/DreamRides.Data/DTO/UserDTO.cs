@@ -1,4 +1,5 @@
 ﻿using DreamRides.Database.Model;
+using Microsoft.SqlServer.Server;
 
 namespace DreamRides.Data.DTO
 {
@@ -18,7 +19,7 @@ namespace DreamRides.Data.DTO
             LastName = user.LastName;
             Email = user.Email;
             CreatedAt = user.CreatedAt;
-            FavoriteCars = user.Favorites.Where(f=>f.UserId == this.Id).Select(t=>t.Car).ToList();
+            FavoriteCars = user.Favorites !=null ? user.Favorites.Where(f=>f.UserId == user.Id).Select(t=>t.Car).ToList():[];
         }
     }
 }

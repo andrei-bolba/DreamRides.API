@@ -6,14 +6,14 @@ using MediatR;
 
 namespace DreamRides.Service.Users.Command;
 
-public class DeleteCommand: IRequest<Result<ResponseType<UserDTO>>>
+public class DeleteUserCommand: IRequest<Result<ResponseType<UserDTO>>>
 {
-    public Guid Id { get; set; }
+    public required Guid Id { get; set; }
 }
 
-public sealed class DeleteCommandHandler(IUserRepository userRepository) : IRequestHandler<DeleteCommand, Result<ResponseType<UserDTO>>>
+public sealed class DeleteUserCommandHandler(IUserRepository userRepository) : IRequestHandler<DeleteUserCommand, Result<ResponseType<UserDTO>>>
 {
-    public async Task<Result<ResponseType<UserDTO>>> Handle(DeleteCommand request, CancellationToken cancellationToken)
+    public async Task<Result<ResponseType<UserDTO>>> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
     {
         var result = userRepository.Delete(request.Id);
 
