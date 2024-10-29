@@ -1,26 +1,21 @@
 ﻿using DreamRides.Database.Enums;
 using DreamRides.Database.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DreamRides.Data.DTO
 {
     public class CarDTO
     {
         public Guid Id { get; set; }
-        public required string Brand { get; set; }
-        public required string Model { get; set; }
-        public required int Year { get; set; }
-        public required decimal Price { get; set; }
-        public required string Color { get; set; }
-        public required Transmision Transmission { get; set; }
-        public required int Mileage { get; set; }
-        public required FuelType FuelType { get; set; }
-        public required string Description { get; set; }
-        public required Chassis Chassis { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public decimal Price { get; set; }
+        public string Color { get; set; }
+        public Transmision Transmission { get; set; }
+        public int Mileage { get; set; }
+        public FuelType FuelType { get; set; }
+        public string Description { get; set; }
+        public Chassis Chassis { get; set; }
         public List<User> Favorite { get; set; }
 
         public CarDTO(Car car)

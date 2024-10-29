@@ -8,7 +8,7 @@ namespace DreamRides.Service.Users.Query;
 
 public record GetOneUserQuery : IRequest<Result<ResponseType<UserDTO>>>
 {
-    public Guid UserId { get; set; }
+    public required Guid UserId { get; set; }
 }
 
 public sealed class GetOneUserQueryHandler(IUserRepository userRepository) : IRequestHandler<GetOneUserQuery,Result<ResponseType<UserDTO>>>

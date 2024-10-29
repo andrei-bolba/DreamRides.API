@@ -55,7 +55,7 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> DeleteUser(Guid userId)
     {
-        return await sender.Send(new DeleteCommand(){Id = userId});
+        return await sender.Send(new DeleteUserCommand(){Id = userId});
     }
     
     [AllowAnonymous]
@@ -65,6 +65,6 @@ public sealed class UserController(ISender sender): ApiControllerBase
     [ProducesResponseType(500)]
     public async Task<ResponseType<UserDTO>> UpdateUser(Guid userId, [FromBody]UserRequest user)
     {
-        return await sender.Send(new UpdateCommand(){UserId = userId, UserRequest = user});
+        return await sender.Send(new UpdateUserCommand(){UserId = userId, UserRequest = user});
     }
 }

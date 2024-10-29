@@ -18,9 +18,10 @@ public static class ApplicationServiceExtensions
             options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         });
         services.AddCors();
-        ServiceCollectionExtensions.AddMediatR(services, cfg => cfg.RegisterServicesFromAssemblies(coreProjectsAssemblies)
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(coreProjectsAssemblies)
         );
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<ICarRepository, CarRepository>();
 
         return services;
     }
